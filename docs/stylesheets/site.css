@@ -57,10 +57,86 @@ html, body {
   position: relative; }
 .color-chart .amount-blond {
   padding-top: 300px;
-  text-align: left; }
+  visibility: hidden; }
 .color-chart .amount-black {
-  padding-top: 434.48px; }
+  padding-top: 434.48px;
+  visibility: hidden; }
 .color-chart .amount-red {
-  padding-top: 72.5px; }
+  padding-top: 72.5px;
+  visibility: hidden; }
 .color-chart .amount-brown {
-  padding-top: 589.75px; }
+  padding-top: 589.75px;
+  visibility: hidden; }
+
+@-webkit-keyframes slideDown {
+  from {
+    height: 0; }
+  to {
+    height: inherit; } }
+
+@keyframes slideDown {
+  from {
+    height: 0; }
+  to {
+    height: inherit; } }
+.slided {
+  -webkit-animation: slideDown 1s linear;
+          animation: slideDown 1s linear; }
+
+@-webkit-keyframes winner {
+  from {
+    font-size: 'inherit'; }
+  to {
+    font-size: '48px'; } }
+
+@keyframes winner {
+  from {
+    font-size: 'inherit'; }
+  to {
+    font-size: '48px'; } }
+.winner {
+  -webkit-animation: winner 1s linear;
+          animation: winner 1s linear; }
+
+.submit {
+  padding-bottom: 50%; }
+  .submit .blond {
+    color: white;
+    background-color: #AA8439; }
+  .submit .black {
+    color: white;
+    background-color: #040403; }
+  .submit .brown {
+    color: white;
+    background-color: #551D00; }
+  .submit .red {
+    color: white;
+    background-color: #A7383E; }
+  .submit a {
+    width: 100%;
+    font-size: 48px;
+    position: absolute;
+    text-align: center; }
+  .submit .row {
+    width: 100%; }
+  .submit .blond-line {
+    height: 300px;
+    width: 30px; }
+  .submit .black-line {
+    width: 30px;
+    height: 434.48px; }
+  .submit .red-line {
+    height: 72.5px;
+    width: 30px; }
+  .submit .brown-line {
+    width: 30px;
+    height: 589.75px; }
+  .submit .amount {
+    text-align: left; }
+  .submit .row.amount {
+    padding-top: 600px; }
+  .submit .col {
+    height: 100%;
+    position: relative; }
+  .submit h1 {
+    text-align: center; }

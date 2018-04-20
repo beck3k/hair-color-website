@@ -6,9 +6,9 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title>Hairy Situation</title>
-    <link href="/stylesheets/site.css" rel="stylesheet" />
-    <script src="/javascripts/site.js"></script>
+    <title><%= current_page.data.title || "Middleman" %></title>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   </head>
@@ -26,38 +26,7 @@
           </li>
       </div>
     </nav>
-    <div class="container-fluid hypothesis-box">
-  <div style="display: block;">
-    <h1>Hypothesis</h1>
-    <h3>Brown hair will be the most common color because most people have blond or black hair, but not every hair color is perfect so the mix between the two is brown.</h3>
-  </div>
-</div>
-
-<div class="container-fluid color-chart">
-  <div class="row">
-    <div class="col">
-      <span class="blond">Blond</span>
-      <span class="blond-line blond"></span>
-      <span class="amount amount-blond">29</span>
-    </div>
-    <div class="col">
-      <span class="black">Black</span>
-      <span class="black-line black"></span>
-      <span class="amount amount-black">42</span>
-    </div>
-    <div class="col">
-      <span class="brown">Brown</span>
-      <span class="brown-line brown"></span>
-      <span class="amount amount-brown">57</span>
-    </div>
-    <div class="col">
-      <span class="red">Red</span>
-      <span class="red-line red"></span>
-      <span class="amount amount-red">7</span>
-    </div>
-  </div>
-</div>
-
+    <%= yield %>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>

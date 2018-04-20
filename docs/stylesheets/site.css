@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Hair Font';
+  src: url("../fonts/Kingthings Lupineless.ttf"); }
+.hypothesis-box {
+  text-align: center;
+  min-height: 100%;
+  height: 100%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto !important; }
+
+html, body {
+  height: 100%; }
+
+.color-chart .blond {
+  color: white;
+  background-color: #AA8439; }
+.color-chart .black {
+  color: white;
+  background-color: #040403; }
+.color-chart .brown {
+  color: white;
+  background-color: #551D00; }
+.color-chart .red {
+  color: white;
+  background-color: #A7383E; }
+.color-chart span {
+  width: 100%;
+  font-size: 24px;
+  position: absolute;
+  text-align: center; }
+.color-chart .row {
+  width: 100%; }
+.color-chart .blond-line {
+  height: 300px;
+  width: 30px; }
+.color-chart .black-line {
+  width: 30px;
+  height: 434.48px; }
+.color-chart .red-line {
+  height: 72.5px;
+  width: 30px; }
+.color-chart .brown-line {
+  width: 30px;
+  height: 589.75px; }
+.color-chart .amount {
+  text-align: left; }
+.color-chart .row.amount {
+  padding-top: 600px; }
+.color-chart .col {
+  height: 100%;
+  position: relative; }
+.color-chart .amount-blond {
+  padding-top: 300px;
+  text-align: left; }
+.color-chart .amount-black {
+  padding-top: 434.48px; }
+.color-chart .amount-red {
+  padding-top: 72.5px; }
+.color-chart .amount-brown {
+  padding-top: 589.75px; }

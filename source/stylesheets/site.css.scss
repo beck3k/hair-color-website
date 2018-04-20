@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Hair Font';
+  src: url('../fonts/Kingthings Lupineless.ttf');
+}
+
+.hypothesis-box {
+  text-align: center;
+  min-height: 100%;
+  height: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  height: auto !important;
+}
+
+html,body{
+  height: 100%;
+}
+
+.color-chart {
+  // display: flex;
+  .blond {
+    color: white;
+    background-color: #AA8439;
+  }
+  .black {
+    color: white;
+    background-color: #040403;
+  }
+  .brown {
+    color: white;
+    background-color: #551D00;
+  }
+  .red {
+    color: white;
+    background-color: #A7383E;
+  }
+  span {
+    width: 100%;
+    font-size: 24px;
+    position: absolute;
+    text-align: center;
+  }
+  .row {
+    width: 100%;
+  }
+  .blond-line {
+    height: 300px;
+    width: 30px;
+  }
+  .black-line {
+    width: 30px;
+    height: 434.48px;
+  }
+  .red-line {
+    height: 72.5px;
+    width: 30px;
+  }
+  .brown-line {
+    width: 30px;
+    height: 589.75px;
+  }
+  .amount {
+    text-align: left;
+  }
+  .row.amount {
+    padding-top: 600px;
+  }
+  .col {
+    height: 100%;
+    position: relative;
+  }
+  .amount-blond {
+    padding-top: 300px;
+    text-align: left;
+  }
+  .amount-black {
+    padding-top: 434.48px;
+  }
+  .amount-red {
+    padding-top: 72.5px;
+  }
+  .amount-brown {
+    padding-top: 589.75px;
+  }
+}
